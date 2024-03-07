@@ -1,0 +1,17 @@
+.pageContainer {
+  /* margin: auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("../../../assets/images/i5.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+.nContainer {
+  border-radius: 15px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
+  background-color: #e5e5e5;
+  padding: 20px;
+}

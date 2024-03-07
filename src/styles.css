@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+:root {
+  --main-color: #009999;
+  --light-color: #f0f3f2;
+  --shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px,
+    rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,
+    rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+  --font-family: "Lato", sans-serif;
+  --rating-color: #ffc908;
+}
+
+body {
+  font-family: var(--font-family) !important;
+}
+.logoIcon {
+  color: var(--main-color);
+}
+.logoTxt {
+  font-size: 26px;
+  font-weight: 550;
+  margin-left: 40px;
+}
+.nav-link {
+  transition: unset !important;
+}
+.active-link {
+  /* background-color: var(--main-color) !important; */
+  color: var(--main-color) !important;
+  /* border-radius: 5px; */
+}
+
+.rating-color {
+  color: var(--rating-color);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+a,
+a:hover {
+  color: #272727;
+  text-decoration: none;
+}
+
+.linkFontSize {
+  font-size: 16px;
+}
+.btn-main {
+  background-color: var(--main-color);
+  padding: 7px 20px;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.btn-main:hover {
+  border-color: var(--main-color);
+}
+
+.font-sm {
+  font-size: 12px;
+}
+.titleSize {
+  font-size: 16px;
+}
+.text-main {
+  color: var(--main-color);
+}
+
+.card {
+  width: 95%;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 5px;
+  /* border: solid 1px var(--main-color); */
+  transition: box-shadow 0.7s;
+  /* overflow: hidden; */
+}
+
+.card:hover {
+  box-shadow: 0 0 7px #009999;
+}
+.cardsContainer {
+  /* width: 80%; */
+  padding: 20px 120px;
+}
+
+.cardContent-container {
+  /* background-color: aqua; */
+  padding: 0px 5px;
+}
+.cardBtn {
+  padding: 1px 15px;
+  transform: translateY(300%);
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.card:hover .cardBtn {
+  transform: translateY(-30%);
+  opacity: 100;
+}
+.bg-main-light {
+  background-color: var(--light-color) !important;
+}
+
+.fIcon:hover {
+  color: #dc3545;
+}
+
+/* .navLinks {
+  color: black;
+  text-decoration: none;
+  transition: all 0.4s !important;
+}
+.navLinks:hover {
+  color: var(--main-color) !important;
+} */
+
+/* 
+
+
+.bg-main {
+  background-color: var(--main-color) !important;
+}
+
+
+.btn-main:disabled {
+  cursor: not-allowed;
+  background-color: #ccc;
+}
+.btn-main:disabled:hover {
+  background-color: #ccc;
+}
+.btn-main:hover {
+  background-color: #11bd11;
+} */

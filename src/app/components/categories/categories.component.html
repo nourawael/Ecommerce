@@ -1,0 +1,29 @@
+<section class="container mt-5">
+  <div class="row g-3">
+    <div class="col-md-4 g-3" *ngFor="let category of categories">
+      <div
+        class="categoryCard text-center cursor-pointer"
+        (click)="getSubCategory(category._id)"
+        (click)="getCategory(category._id)"
+      >
+        <img [src]="category.image" class="w-100" height="300px" />
+        <h3 class="m-3">{{ category.name }}</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container mt-5 mb-5">
+  <div class="text-center mb-3">
+    <h4 class="h2 text-main">{{ Category.name }}</h4>
+  </div>
+  <div class="row g-3">
+    <div class="col-md-4 g-3" *ngFor="let subCategory of subCategories">
+      <div class="categoryCard text-center">
+        <h3 class="m-3">
+          {{ subCategory.name.split(" ").slice(0, 2).join(" ") }}
+        </h3>
+      </div>
+    </div>
+  </div>
+</section>

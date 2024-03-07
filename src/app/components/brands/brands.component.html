@@ -1,0 +1,55 @@
+<section class="container mt-5 mb-5">
+  <div class="row g-3">
+    <div
+      class="col-md-3 g-3"
+      *ngFor="let brand of brands"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      <div
+        class="categoryCard text-center cursor-pointer"
+        (click)="getBrandDetails(brand._id)"
+      >
+        <img [src]="brand.image" class="w-100" height="200px" />
+        <h5 class="m-3 text-main">{{ brand.name }}</h5>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="ms-4">
+              <h4 class="h1 text-main">{{ brand.name }}</h4>
+              <p>{{ brand.slug }}</p>
+            </div>
+            <img [src]="brand.image" class="w-50" height="150px" />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-main" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

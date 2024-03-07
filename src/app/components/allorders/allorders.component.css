@@ -1,0 +1,16 @@
+.cartContainer {
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
+}
+.quantityBtn {
+  padding: 5px 15px;
+  background-color: transparent;
+  color: black;
+  margin: 0px 8px;
+}
+.quantityBtn:hover {
+  background-color: #009999;
+  color: #f0f3f2;
+}
+li {
+  color: #009999;
+}

@@ -1,0 +1,27 @@
+<div class="contentContainer">
+  <div class="p-3 text-center">
+    <h2>Please enter code sent to your Email</h2>
+  </div>
+  <div class="form-container">
+    <form [formGroup]="forgetForm" (ngSubmit)="handleForm()">
+      <div class="form-group row form-element">
+        <label for="resetCode" class="col-sm-2 col-form-label">Code</label>
+        <div class="col-sm-10">
+          <input
+            formControlName="resetCode"
+            type="text"
+            class="form-control"
+            placeholder="resetCode"
+            id="resetCode"
+          />
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="">
+          <button class="btn btn-primary d-block ms-auto">Verify</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

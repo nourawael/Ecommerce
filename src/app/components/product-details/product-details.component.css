@@ -1,0 +1,16 @@
+.detailsContainer {
+  /* background-color: aqua; */
+  padding: 50px;
+}
+
+.dContantContainer {
+  /* background-color: brown; */
+  margin-top: 20%;
+}
+.dContantContainer h1 {
+  font-weight: 700;
+  font-size: 32px;
+}
+.dButton {
+  /* padding: 7px 250px; */
+}
